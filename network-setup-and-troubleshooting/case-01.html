@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="zh-Hant-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+    <title>案例：公司多設備連線不穩，透過固定 IP 規劃改善網路管理與穩定性 - 司八達資訊</title>
+    <meta name="description" content="統一規劃固定 IP、排除衝突問題，提升內網連線效率與穩定度。" />
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-5.0.0-beta1.min.css" />
+    <link rel="stylesheet" href="../assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="../assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="../assets/css/animate.css" />
+    <link rel="stylesheet" href="../assets/css/lindy-uikit.css" />
+</head>
+<body>
+    <!-- ========================= preloader start ========================= -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="spinner">
+                <div class="spinner-container">
+                    <div class="spinner-rotator">
+                        <div class="spinner-left">
+                            <div class="spinner-circle"></div>
+                        </div>
+                        <div class="spinner-right">
+                            <div class="spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========================= preloader end ========================= -->
+    <!-- ========================= hero-section-wrapper-5 start ========================= -->
+    <section id="home" class="hero-section-wrapper-5">
+
+        <!-- ========================= header-6 start ========================= -->
+        <header class="header header-6">
+            <div class="navbar-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <nav class="navbar navbar-expand-lg">
+                                <a class="navbar-brand" href="../index.html">
+                                    <img src="../assets/img/logo/logo.svg" alt="logo" />
+                                </a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent6" aria-controls="navbarSupportedContent6" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="toggler-icon"></span>
+                                    <span class="toggler-icon"></span>
+                                    <span class="toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent6">
+                                    <ul id="nav6" class="navbar-nav ms-auto">
+                                        <li class="nav-item">
+                                            <a class="page-scroll active" href="../#home">首頁</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="page-scroll" href="../#feature">特色服務</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="page-scroll" href="../#about">關於我們</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="page-scroll" href="../#pricing">費用說明</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="page-scroll" href="../#contact">聯絡我們</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- navbar collapse -->
+                            </nav>
+                            <!-- navbar -->
+                        </div>
+                    </div>
+                    <!-- row -->
+                </div>
+                <!-- container -->
+            </div>
+            <!-- navbar area -->
+        </header>
+        <!-- ========================= header-6 end ========================= -->
+
+    </section>
+    <!-- ========================= hero-section-wrapper-5 end ========================= -->
+
+
+
+    <section id="feature" class="feature-section feature-style-5 wow fadeInUp" data-wow-delay=".2s">
+        <div class="container">
+            <h1 class="h3 mb-4 text-center">案例：公司多設備連線不穩，透過固定 IP 規劃改善網路管理與穩定性</h1>
+            <div class="mb-4 text-center">
+                <img src="../assets/img-feature/network-setup-and-troubleshooting/case-01-01.png" class="img-fluid rounded mb-2" alt="case-01-01">
+                <p class="text-muted">統一規劃固定 IP，時間：2025-10-03</p>
+            </div>
+
+            <p class="mb-2">
+                本次案例來自一家小型會計事務所，近期多位員工反映公司內部網路時常出現連線中斷、NAS 讀取延遲、印表機無法連線等問題。這些狀況雖然重開電腦後偶爾會恢復，但隔天又會再次發生。
+                由於業務大量依賴檔案存取與雲端報稅系統，頻繁的網路異常已影響到工作效率，因此我們希望能找出根本原因，並重新調整網路環境。
+            </p>
+
+            <p class="mb-2">
+                在抵達現場檢查後，我們先查看路由器與交換器的運作狀況，並針對主要電腦、NAS、印表機與 Wi-Fi AP 逐一確認連線設定。
+                檢測過程中發現，許多設備皆使用預設的 DHCP 自動取得 IP，而路由器發放的 IP 範圍又相當有限，加上辦公室近年增加了多台筆電與無線裝置，導致 IP 經常「重複」或「衝突」。
+            </p>
+
+            <p class="mb-2">
+                例如 NAS 原本應保持固定位置，但因 DHCP 自動分配，IP 在重新開機後改變，使得部分電腦找不到網路磁碟。
+                印表機也因 IP 變動導致無法連線，員工必須重新安裝或手動更新 IP 才能列印。這些症狀正是典型的 IP 配置混亂造成。
+            </p>
+
+            <p class="mb-2">
+                確認問題後，我們向客戶說明了導致不穩定的主因：設備數量增加後，DHCP 亂跳 IP 導致位址衝突，進而造成 NAS、印表機與共享資料夾時常失聯。
+                為了解決這類問題，我們建議採用「固定 IP 規劃」，將所有重要設備指定為固定 IP，並重新整理整個網路的位址配置。
+            </p>
+
+            <p class="mb-2">
+                經討論後，我們開始進行 IP 規劃，將網段劃分為三類：
+                第一類為核心設備（NAS、伺服器、交換器管理界面）；
+                第二類為辦公室固定電腦與重要印表機；
+                第三類則保留給 Wi-Fi 裝置與臨時訪客設備。
+                我們設定路由器的 DHCP 區間遠離上述固定 IP，使自動分配與手動指定不會互相重疊。
+            </p>
+
+            <p class="mb-2">
+                完成規劃後，我們逐台設定固定電腦的 IP，包括子網路遮罩、閘道及 DNS；
+                同時也調整 NAS 與印表機的網路參數，使它們永遠保持在固定位置。
+                為了確保未來的設備新增不會混淆，我們也替客戶建立 IP 分配紀錄表，清楚標示每個位址的用途。
+            </p>
+
+            <p class="mb-2">
+                設定完成後，我們進行連線測試，包括網路磁碟掛載、印表機列印測試、NAS 讀取速度測試以及局域網傳輸。
+                所有功能皆正常，且沒有出現位址衝突或不明斷線情形。
+                多台電腦同時讀取資料時，NAS 的反應也變得穩定許多。
+                客戶表示，過去常因找不到印表機或連不到 NAS 而浪費不少時間，現在這些問題完全消失，整體效率顯著提升。
+            </p>
+
+            <p class="mb-4">
+                本案例顯示，當企業內部設備逐漸增加時，單純依靠 DHCP 自動分配 IP 很容易形成混亂，甚至影響日常運作。
+                透過完整的固定 IP 規劃與配置，不僅能提升網路穩定性，也能減少維護上的困擾。
+                若發現共享資料、印表機或 NAS 常無預警斷線，通常與 IP 分配混亂有關，建議儘早由專業人員協助規劃，以確保辦公室網路環境維持最佳狀態。
+            </p>
+
+            <p class="fw-bold">
+                ➤ 維修結論：重新規劃並設定固定 IP，有效解決連線不穩與設備衝突問題，網路運作全面恢復順暢。
+            </p>
+
+        </div>
+    </section>
+
+
+
+    <!-- ========================= footer style-4 start ========================= -->
+    <footer class="footer footer-style-4">
+        <div class="container">
+            <div class="widget-wrapper">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-widget wow fadeInUp" data-wow-delay=".2s">
+                            <div class="logo">
+                                <a href="../#home"><img src="../assets/img/logo/logo.svg" alt="logo"></a>
+                            </div>
+                            <p class="desc">
+                                提供台南地區專業電腦維修、系統重灌、硬體升級、NAS 架設、網路設備設定與企業 IT 支援服務。
+                                針對家庭與小型辦公室提供快速檢測、透明報價、專業到府服務，解決各類電腦與網路問題。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-widget wow fadeInUp" data-wow-delay=".3s">
+                            <h6>快速連結</h6>
+                            <ul class="links">
+                                <li><a href="../#home">首頁</a></li>
+                                <li><a href="../#feature">特色服務</a></li>
+                                <li><a href="../#about">關於我們</a></li>
+                                <li><a href="../#pricing">費用說明</a></li>
+                                <li><a href="../#contact">聯絡我們</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-widget wow fadeInUp" data-wow-delay=".4s">
+                            <h6>特色服務</h6>
+                            <ul class="links">
+                                <li><a href="../desktop-repair">桌機維修</a></li>
+                                <li><a href="../system-setup">系統安裝</a></li>
+                                <li><a href="../nas-setup">NAS 架設</a></li>
+                                <li><a href="../network-setup-and-troubleshooting">網路架設與診斷</a></li>
+                                <li><a href="../printer-and-device-setup">印表機與周邊設備設定</a></li>
+                                <li><a href="../small-business-it-support">小型企業 IT 服務</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="footer-widget wow fadeInUp" data-wow-delay=".5s">
+                            <h6>聯絡我們</h6>
+                            <ul>
+                                <li>
+                                    <a href="tel:0910819571">
+                                        <span class="icon"><i class="lni lni-phone"></i></span>
+                                        <span class="text">0910-819-571 (週一至週五 晚上 7 點後，六日整天)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../#contact">
+                                        <span class="icon"><i class="lni lni-map-marker"></i></span>
+                                        <span class="text">台南市區到府維修</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-wrapper wow fadeInUp" data-wow-delay=".2s">
+                <p>Design and Developed by <a href="../" rel="nofollow" target="_blank">SpardaIT</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- ========================= footer style-4 end ========================= -->
+    <!-- ========================= scroll-top start ========================= -->
+    <a href="#" class="scroll-top"><i class="lni lni-chevron-up"></i></a>
+    <!-- ========================= scroll-top end ========================= -->
+    <!-- ========================= JS here ========================= -->
+    <script src="../assets/js/bootstrap-5.0.0-beta1.min.js"></script>
+    <script src="../assets/js/tiny-slider.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/other.js"></script>
+</body>
+</html>
