@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pcshih.github.io/SpardaIT/sitemap.xml
